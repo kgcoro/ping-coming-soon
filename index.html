@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  We are launching soon!
+<body class="body-container">
 
-  Subscribe and get notified
 
-  Notify Me
+  <header>
+    <div class="logo">
+      <div class="logo-img"></div>
+    </div>
+  </header>
 
-  &copy; Copyright Ping. All rights reserved.
+  <main class="main-container">
+    <section class="tittle-container">
+      <h1>We are launching soon!</h1>
+      <p>Subscribe and get notified</p>
+    </section>
+
+    <section class="email-container">
+      <input type="email" name="email" id="email">
+      <button type="submit">Notify Me</button>
+    </section>
+
+    <section class="dashboard-container">
+      <div class="dashboard-img"></div>
+    </section>
+
+    <secction class="social-media-container">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </secction>
+
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </main>
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Kleber Coro</a>.
     </p>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --primary-blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    height: 100vh;
+}
+
+.body-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    background-image: url("./images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40%;
+}
+
+.dashboard-container {
+    width: 35rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-img {
+    position: relative;
+    background-image: url("./images/illustration-dashboard.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
