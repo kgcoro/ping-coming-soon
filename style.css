@@ -22,7 +22,6 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
     height: 100vh;
 }
 
@@ -46,23 +45,109 @@ body {
     background-image: url("./images/logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 40%;
     height: 40%;
 }
 
+.main-container {
+    text-align: center;
+}
+
+.tittle-container h1 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+.tittle-container h1 span{
+    color: var(--neutral-gray);
+    font-weight: 300;
+} 
+
+.tittle-container p {
+    color: var(--very-dark-blue);
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.email-container {
+    width: 100%;
+    height: 3rem;
+}
+
+.email-container input {
+    width: 60%;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid var(--neutral-gray);
+    border-radius: 1.5rem;
+}
+
+.email-container input::placeholder {
+    color: var(--neutral-gray);
+    padding-left: 1.5rem;
+}
+
+.email-container button {
+    width: 35%;
+    height: 2.5rem;
+    color: white;
+    background-color: var(--primary-blue);
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 9px 2px var(--pale-blue);
+}
+
+.email-container button:hover {
+    background-color: var(--pale-blue);
+}
+
 .dashboard-container {
-    width: 35rem;
-    height: 24rem;
+    width: 30rem;
+    height: 20rem;
     display: flex;
     align-items: center;
 }
 
 .dashboard-img {
-    position: relative;
     background-image: url("./images/illustration-dashboard.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 100%;
+    height: 85%;
 }
 
+.social-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fa-brands {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+    color: var(--primary-blue);
+    font-size: 11px;
+    padding: 6px;
+    margin-bottom: 20px;
+}
+
+.fa-brands:hover {
+    color: white;
+    background-color: var(--primary-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--neutral-gray);
+    margin-bottom: 10px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
