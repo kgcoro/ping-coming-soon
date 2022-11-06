@@ -1,153 +1,218 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 :root {
-    --primary-blue: hsl(223, 87%, 63%);
-    --pale-blue: hsl(223, 100%, 88%);
-    --light-red: hsl(354, 100%, 66%);
-    --neutral-gray: hsl(0, 0%, 59%);
-    --very-dark-blue: hsl(209, 33%, 12%);
+  --primary-blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .body-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
-    width: 10rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 6rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-img {
-    background-image: url("./images/logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40%;
-    height: 40%;
+  background-image: url("./images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 40%;
 }
 
 .main-container {
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .tittle-container h1 {
-    font-size: 35px;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.tittle-container h1 span{
-    color: var(--neutral-gray);
-    font-weight: 300;
-} 
+.tittle-container h1 span {
+  color: var(--neutral-gray);
+  font-weight: 300;
+}
 
 .tittle-container p {
-    color: var(--very-dark-blue);
-    font-size: 14px;
-    margin-bottom: 1rem;
+  color: var(--very-dark-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
 }
 
 .email-container {
-    width: 100%;
-    height: 3rem;
+  width: 100%;
+  height: 3rem;
 }
 
 .email-container input {
-    width: 60%;
-    height: 2.5rem;
-    margin-right: 0.5rem;
-    border: 1px solid var(--neutral-gray);
-    border-radius: 1.5rem;
+  width: 15rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--neutral-gray);
+  border-radius: 1.5rem;
 }
 
 .email-container input::placeholder {
-    color: var(--neutral-gray);
-    padding-left: 1.5rem;
+  color: var(--neutral-gray);
+  padding-left: 1.5rem;
 }
 
 .email-container button {
-    width: 35%;
-    height: 2.5rem;
-    color: white;
-    background-color: var(--primary-blue);
-    border-radius: 1.5rem;
-    border: none;
-    box-shadow: 3px 3px 9px 2px var(--pale-blue);
-}
-
-.email-container button:hover {
-    background-color: var(--pale-blue);
+  width: 8rem;
+  height: 2rem;
+  color: white;
+  background-color: var(--primary-blue);
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 3px 3px 9px 2px var(--pale-blue);
 }
 
 .dashboard-container {
-    width: 30rem;
-    height: 20rem;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .dashboard-img {
-    background-image: url("./images/illustration-dashboard.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 85%;
+  background-image: url("./images/illustration-dashboard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 85%;
 }
 
 .social-media-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .fa-brands {
-    width: 25px;
-    height: 25px;
-    border: 1px solid var(--pale-blue);
-    border-radius: 50%;
-    color: var(--primary-blue);
-    font-size: 11px;
-    padding: 6px;
-    margin-bottom: 20px;
-}
-
-.fa-brands:hover {
-    color: white;
-    background-color: var(--primary-blue);
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+  color: var(--primary-blue);
+  font-size: 0.5rem;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    color: var(--neutral-gray);
-    margin-bottom: 10px;
+  font-size: 0.5rem;
+  text-align: center;
+  color: var(--neutral-gray);
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (hover: hover) {
+  .email-container button:hover {
+    cursor: pointer;
+    background-color: var(--pale-blue);
   }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  .fa-brands:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary-blue);
   }
+}
+
+@media screen and (max-width: 900px) {
+    .body-container {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .tittle-container h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tittle-container p {
+    font-size: .5rem;
+    margin-bottom: 2rem;
+  }
+
+  .email-container {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .email-container input {
+    width: 70%;
+  }
+
+  .email-container button {
+    width: 70%;
+  }
+
+  .dashboard-container {
+    margin-bottom: 5rem;
+  }
+
+  .dashboard-img {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .social-media-container {
+    margin-bottom: 1.5rem;
+  }
+}
