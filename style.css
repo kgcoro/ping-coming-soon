@@ -114,14 +114,14 @@ body::-webkit-scrollbar {
 }
 
 .email-container .email-validation {
-    position: absolute;
-    width: 20.5rem;
-    margin-top: 2.5rem;
-    font-size: .5rem;
-    font-weight: 600;
-    font-style: italic;
-    color: var(--light-red);
-    text-align: start;
+  position: absolute;
+  width: 20.5rem;
+  margin-top: 2.5rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--light-red);
+  text-align: start;
 }
 
 .dashboard-container {
@@ -184,20 +184,19 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1200px) {
-    .body-container {
-        justify-content: flex-start;
-    }
+  .body-container {
+    justify-content: normal;
+  }
 }
 
 @media screen and (max-width: 600px) {
-
   .tittle-container h1 {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
 
   .tittle-container p {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
   .email-container {
@@ -215,7 +214,6 @@ body::-webkit-scrollbar {
     width: 10rem;
     top: 9rem;
     text-align: center;
-
   }
 
   .email-container button {
