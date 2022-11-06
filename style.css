@@ -182,13 +182,6 @@ body::-webkit-scrollbar {
   }
 }
 
-@media screen and (max-width: 900px) {
-    .body-container {
-        justify-content: center;
-    }
-
-}
-
 @media screen and (max-width: 600px) {
 
   .tittle-container h1 {
