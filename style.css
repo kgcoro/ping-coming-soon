@@ -38,12 +38,13 @@ body::-webkit-scrollbar {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .logo {
-  width: 6rem;
-  height: 4rem;
+  width: 10rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +65,7 @@ body::-webkit-scrollbar {
 }
 
 .tittle-container h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -83,14 +84,14 @@ body::-webkit-scrollbar {
 
 .email-container {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .email-container input {
-  width: 15rem;
+  width: 17rem;
   height: 2rem;
   margin-right: 0.5rem;
   border: 1px solid var(--neutral-gray);
@@ -125,7 +126,7 @@ body::-webkit-scrollbar {
 
 .dashboard-container {
   width: 100%;
-  height: 15rem;
+  height: 18rem;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -155,7 +156,7 @@ body::-webkit-scrollbar {
   color: var(--primary-blue);
   font-size: 0.5rem;
   padding: 0.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .attribution {
@@ -180,6 +181,12 @@ body::-webkit-scrollbar {
     color: white;
     background-color: var(--primary-blue);
   }
+}
+
+@media screen and (max-width: 900px) {
+    .body-container {
+        justify-content: flex-start;
+    }
 }
 
 @media screen and (max-width: 600px) {
